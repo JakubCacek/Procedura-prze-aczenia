@@ -29,7 +29,7 @@ for i in range(trial_leng):
     else:
         rn = random.random() # po pierwszym trialu losowany jest numer. Jeśli jest on mniejszy lub równy 0.25, to powinno wyświetlić im się inne zadanie
         if rn >= 0.25:
-            Lista_zadan[i] != task_hist[i-1] #wydawało mi się, że przełączenia można zrobić tak, ale pokazuje IndexError: list index out of range
+            Lista_zadan[i] != task_type[i-1] #wydawało mi się, że przełączenia można zrobić tak, ale pokazuje IndexError: list index out of range
             task_type = Lista_zadan
                 #save trial_type
             if task_type == "Let":
