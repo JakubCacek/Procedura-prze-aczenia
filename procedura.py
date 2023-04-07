@@ -28,7 +28,7 @@ for i in range(trial_leng):
             print(random.choice(Num_stim))
     else:
         rn = random.random() # po pierwszym trialu losowany jest numer. Jeśli jest on mniejszy lub równy 0.25, to powinno wyświetlić im się inne zadanie
-        if rn >= 0.25:
+        if rn <= 0.25:
             Lista_zadan[i] != task_type[i-1] #wydawało mi się, że przełączenia można zrobić tak, ale pokazuje IndexError: list index out of range
             task_type = Lista_zadan
                 #save trial_type
@@ -36,7 +36,7 @@ for i in range(trial_leng):
                 print(random.choice(Let_stim))
             elif task_type == "Num":
                 print(random.choice(Num_stim))
-        elif rn < 0.25:
+        elif rn > 0.25:
             Lista_zadan[i] == task_type[i-1] #jeśli wyszło więcej niż 25, to powinno być to samo zadanie co ostatnio
             task_type = Lista_zadan
             if task_type == "Let":
