@@ -37,7 +37,7 @@ for i in range(trial_leng):
             elif task_type == "Num":
                 print(random.choice(Num_stim))
         elif rn < 0.25:
-            Lista_zadan[i] == Lista_zadan[i-1]
+            Lista_zadan[i] == task_type[i-1] #jeśli wyszło więcej niż 25, to powinno być to samo zadanie co ostatnio
             task_type = Lista_zadan
             if task_type == "Let":
                 print(random.choice(Let_stim))
